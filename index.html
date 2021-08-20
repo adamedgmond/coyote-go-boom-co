@@ -20,7 +20,7 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <script>
-(function(apiKey){
+    (function(apiKey){
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
     v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
         o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
@@ -29,11 +29,9 @@
 
         // Call this whenever information about your visitors becomes available
         // Please use Strings, Numbers, or Bools for value types.
-        names = ["Bob", "Judy", "Jackie", "Lisa"];
-        random = Math.floor(Math.random() * names.length);
         pendo.initialize({
             visitor: {
-                id:     random //user_id
+                id: "Bob" //user_id
                 //mail:           email,
                 //full_name:       full_name,
                 //role:            role
@@ -43,7 +41,7 @@
             },
 
             account: {
-                id:           'Coyote Go Boom Co' // Required if using Pendo Feedback
+                id: "Coyote Go Boom Co" // Required if using Pendo Feedback
                 // name:         // Optional
                 // is_paying:    // Recommended if using Pendo Feedback
                 // monthly_value:// Recommended if using Pendo Feedback
@@ -55,8 +53,8 @@
                 // as long as it's not one of the above reserved names.
             }
         });
-})('3fb94292-3500-464b-741c-25bb1813bac6');
-</script>
+    })('3fb94292-3500-464b-741c-25bb1813bac6');
+    </script>
 </head>
 
 <body id="page-top">
